@@ -116,19 +116,21 @@ public class GameOfChanceV2 {
             return coin;
         }
     
-        public String setSpinner(){
+         public String setSpinner(){
             int spinnerSpin = rand.nextInt(4)+1;
-                if(spinnerSpin == 1){
-                    spinner = "Red";
-                }
-                else if(spinnerSpin == 2){
-                    spinner = "Green";
-                }
-                else if(spinnerSpin == 3){
-                    spinner = "Blue";
-                }
-                else{
-                    spinner = "Yellow";
+                switch(spinnerSpin){
+                    case 1:
+                        spinner = "Red";
+                        break;
+                    case 2:
+                        spinner = "Green";
+                        break;
+                    case 3:
+                        spinner = "Blue";
+                        break;
+                    case 4:
+                        spinner = "Yellow";
+                        break;
                 }
             return spinner;
         }
