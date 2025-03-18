@@ -5,8 +5,8 @@ public class Array_Animals_tester{
         animal[1] = new Animals("Cat", "White", 4);
         animal[2] = new Animals("Bird", "Blue", 2);
         
-        for(int i = 0; i < animal.length; i++){
-            animal[i].display();
+        for(Animals i : animal){
+            i.display();
             System.out.println();
         }
     }
